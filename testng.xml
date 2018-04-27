@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="BrowserSuite" parallel="tests" thread-count="3">
+  <!-- <test name="FirefoxTest">
+  <parameter name="browser" value="Firefox"></parameter>
+    <classes>
+      <class name="com.virphy.tests.SeleniumHome"/>
+    </classes>
+  </test> FirefoxTest -->
+  <!-- <test name="ie tes">
+  <parameter name="browser" value="IE"></parameter>
+    <classes>
+      <class name="com.virphy.tests.SeleniumHome"/>
+    </classes>
+  </test> -->
+  <test name="ChromeTest">
+    <classes>
+      <class name="com.virphy.tests.SeleniumTest"/>
+    </classes>
+  </test>
+</suite> <!-- BrowserSuite.. -->
