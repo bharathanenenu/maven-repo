@@ -3,7 +3,7 @@ pipeline {
     stages {
     stage('Code Checkout') { 
             steps { 
-                
+                git credentialsId: 'GithubID', url: 'https://github.com/bharathanenenu/maven-repo.git'
             }
         }
         stage('Build') { 
@@ -13,13 +13,12 @@ pipeline {
         }
         stage('Test'){
             steps {
-                sh 'make check'
-                junit 'reports/**/*.xml' 
+               
             }
         }
         stage('Deploy') {
             steps {
-                sh 'make publish'
+              
             }
         }
     }
