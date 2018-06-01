@@ -7,13 +7,19 @@ pipeline {
             }
         }
         stage('Build') { 
-           
+           steps { 
+                echo 'Build triggered'
+            }
         }
         stage('Test'){
-            
+           steps { 
+                echo 'Test triggered'
+            } 
         }
         stage('Deploy') {
-           
+           steps { 
+                echo 'Deployed'
+            }
         }
     }
 }
